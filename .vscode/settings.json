@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "editor.mouseWheelZoom": true,
+    "liveServer.settings.host": "127.0.0.2"
+}

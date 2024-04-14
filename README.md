@@ -1,6 +1,6 @@
 INTEGRANTES:
 
-Constanza Liberona
-Jesús González
-Cristian Ruiz Carmona
-Georgui Katalinic
+// Constanza Liberona //
+ Jesús González //
+ Cristian Ruiz Carmona //
+ Georgui Katalinic //

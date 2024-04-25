@@ -22,20 +22,26 @@
 
       <div id="alertContainer"></div>
 
-      <div class="colordefondo card border-0">
+      <div class="card border-0" style="background-color: inherit;">
         <div class="card-body">
           <form id="productForm" class="row">
             <div class="col-md-6 border-0">
               <div class="form-group">
-                <label for="categoria">Categoría:</label>
-                <input type="text" class="form-control" id="categoria" name="categoria" />
+                <label for="categoria" class="textonegro">Categoría:</label>
+                <select class="form-control" id="categoria" name="categoria">
+                  <option value="rpg">RPG</option>
+                  <option value="aventura">Aventura</option>
+                  <option value="acción">Acción</option>
+                  <option value="estrategia">Estrategia</option>
+                  <option value="deportes">Deportes</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre" class="textonegro">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" />
               </div>
               <div class="form-group">
-                <label for="cantidad">Cantidad:</label>
+                <label for="cantidad" class="textonegro">Cantidad:</label>
                 <input
                   type="number"
                   class="form-control"
@@ -48,7 +54,7 @@
             <div class="col form-group">
               <img
                 class="registro_foto"
-                src="img/blank-profile-picture-973460_1280-768x768.jpg"
+                src="img/descargar (10).jpg"
                 alt=""
               />
             </div>
@@ -146,7 +152,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                 </svg>
-                  Direccion: Calle Falsa 123
+                Dirección: Calle Falsa 123
               </span>
           </p>
       </div>

@@ -20,15 +20,15 @@
     <table class=" fondo_negro borde table table-bordered table-hover">
       <thead class="table-dark">
         <th scope="col">#</th>
-        <th scope="col" class="d-none d-lg-blok d-lg-table-cell ">categoria</th>
-        <th scope="col">producto</th>
-        <th scope="col">precio</th>
+        <th scope="col" class="d-none d-lg-blok d-lg-table-cell ">Categoría</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
         <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">Suscriptor</th>
         <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">Oferta</th>
-        <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">Descuentos totales</th>
-        <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">descuento </th>
-        <th scope="col">precio</th>
-        <th scope="col">opciones</th>
+        <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">Descuentos (%)</th>
+        <th scope="col"class="d-none d-lg-blok d-lg-table-cell ">Descuentos ($)</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Opciones</th>
       </thead>
       <tbody>
 
@@ -43,7 +43,41 @@
           <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">$4000</td>
           <td scope="col">$25.990</td>
           <td scope="col">
-            <button type="button" href="" class="btn btn-dark btn-block"> eliminar
+            <button type="button" href="" class="btn btn-dark btn-block"> Eliminar
+              
+           </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td scope="row">2</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">Deportes</td>
+          <td scope="col">FIFA 22</td>
+          <td scope="col">$19.990</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">5%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">5%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">10%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">$4000</td>
+          <td scope="col">$15.990</td>
+          <td scope="col">
+            <button type="button" href="" class="btn btn-dark btn-block"> Eliminar
+              
+           </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td scope="row">3</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">RPG</td>
+          <td scope="col">Diablo 4</td>
+          <td scope="col">$39.990</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">5%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">5%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">10%</td>
+          <td scope="col"class="d-none d-lg-blok d-lg-table-cell ">$7000</td>
+          <td scope="col">$32.990</td>
+          <td scope="col">
+            <button type="button" href="" class="btn btn-dark btn-block"> Eliminar
               
            </button>
           </td>
@@ -52,7 +86,7 @@
     </table>
 
     <div class="row">
-      <div class="col">
+      <div class="col textonegro">
         <table style="float: right">
           <tr >
             <td>Precio sin IVA $</td>
@@ -67,7 +101,7 @@
             </td>
           </tr>
           <tr>
-            <td>Valor del iva(19%) $</td>
+            <td>Valor del IVA $</td>
             <td>
               <input style="text-align: right;"
                 readonly
@@ -79,7 +113,7 @@
             </td>
           </tr>
           <tr>
-            <td>Total a pagar $</td>
+            <td>Total a Pagar $</td>
             <td>
               <input style="text-align: right;"
                 readonly
@@ -93,7 +127,11 @@
         </table>
       </div>
     </div>
-   
+    <br>
+    <div class="d-flex justify-content-end">
+      <button type="button"  class="borde_redondo btn btn-dark mb-2">Pagar</button>&nbsp;&nbsp;
+      <button type="button"  class="borde_redondo btn btn-dark mb-2">Vaciar Carrito</button>
+    </div>
     
 </div>
 <br>
@@ -135,7 +173,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
             <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
           </svg>
-            Direccion: Calle Falsa 123
+            Dirección: Calle Falsa 123
         </span>
     </p>
 </div>

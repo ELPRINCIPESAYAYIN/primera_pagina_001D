@@ -6,8 +6,7 @@
     font-family: cursive !important;
     color:#000000 !important;}
 .textonegro{
-    color:black;
-    
+    font-weight: bold;
 }
 .logo{
     width: 55px;
@@ -75,4 +74,16 @@ background: linear-gradient(87deg, rgba(222,218,208,1) 21%, rgba(198,182,158,1) 
 .container-fluid {
     max-width: 1200px;  margin: 0 auto;   padding: 0 15px;
     
-    }
+}
+.imagen-producto {
+    margin: 15px !important;
+}
+.fixed-height-card {
+    min-height: 440px;
+    max-height: 400px;
+    overflow: hidden;
+}
+.cardbody {
+    margin-top: auto;
+}
+

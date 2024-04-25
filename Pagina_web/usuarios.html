@@ -17,8 +17,8 @@
     
         <div id="alertContainer"></div>
     
-        <div class="colordefondo card border-0">
-            <div class="border-0" style="color: black; font-size: large;">
+        <div class=" card border-0" style="background-color: inherit;">
+            <div class="border-0 textonegro" style="color: black; font-size: large;">
                 Crear/Actualizar Usuario
             </div>
             <div class="card-body">
@@ -26,44 +26,44 @@
     
                     <div class="col-md-6 border-0">
                         <div class="form-group">
-                            <label for="id">ID:</label>
+                            <label for="id" class="textonegro">ID:</label>
                             <input type="text" class="form-control" id="id" name="id"  >
                         </div>
                         <div class="form-group">
-                            <label for="nombre">Nombre:</label>
+                            <label for="nombre" class="textonegro">Nombre:</label>
                             <input type="text" class="form-control" id="nombre" name="nombre"  >
                         </div>
                         <br>
                         <div class="mb-3">
-                            <label for="tipoUsuario" class="form-label">Tipo Usuario</label>
+                            <label for="tipoUsuario" class="form-label textonegro">Tipo Usuario:</label>
                             <div>
                                 <input type="radio" id="cliente" name="tipoUsuario" value="cliente">
-                                <label for="cliente">Cliente</label>
+                                <label for="cliente" class="textonegro">Cliente</label>
                             </div>
                             <div>
                                 <input type="radio" id="administrador" name="tipoUsuario" value="administrador">
-                                <label for="administrador">Administrador</label>
+                                <label for="administrador" class="textonegro">Administrador</label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="rut">RUT:</label>
+                            <label for="rut" class="textonegro">RUT:</label>
                             <input type="text" class="form-control" id="rut" name="rut" step="0.01" >
                         </div>
                         <div class="form-group">
-                            <label for="nombres">Nombres:</label>
+                            <label for="nombres" class="textonegro">Nombres:</label>
                             <input type="text" class="form-control" id="nombres" name="nombres" step="0.01" >
                           </div>
                         <div class="form-group">
-                            <label for="apellidos">Apellidos:</label>
+                            <label for="apellidos" class="textonegro">Apellidos:</label>
                             <input type="text" class="form-control" id="apellidos" name="apellidos" step="0.01" >
                         </div>
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label for="email" class="textonegro">Email:</label>
                             <input type="text" class="form-control" id="email" name="email" step="0.01" >
                         </div>
                         <br>
                         <div class="mb-3">
-                            <label for="suscrito" class="form-label">Con subscripción</label>
+                            <label for="suscrito" class="form-label textonegro">Con subscripción</label>
                             <input type="checkbox" id="suscrito" name="suscrito">
                             <div id="suscritoHelp" class="form-text">
                                 Deseo subscribirme con un aporte de $5.000 mensuales
@@ -71,11 +71,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="direccion">Direccion:</label>
+                            <label for="direccion" class="textonegro">Dirección:</label>
                             <textarea class="form-control" id="direccion" name="direccion" rows="3" ></textarea>
                         </div>             
                         <div class="form-group">
-                            <label for="contrasena">Contraseña:</label>
+                            <label for="contrasena" class="textonegro">Contraseña:</label>
                             <div class="d-flex flex-row">
                                 <input type="password" class="form-control" id="contrasena" name="contrasena">
 
@@ -86,7 +86,7 @@
                     <br>
                     </div>
                     <div class=" col form-group">
-                        <img  class="registro_foto" src="img/blank-profile-picture-973460_1280-768x768.jpg" alt="">
+                        <img  class="registro_foto" src="img/goku.jpg" alt="">
                         <br>
                         <br>
                         <div> <input type="file" class="btn btn-dark btn-block">
@@ -94,11 +94,13 @@
                         <br><br><br><br><br><br><br>
                         <br><br><br><br><br><br><br>
                         <br><br><br><br><br><br>
-                        <button type="submit" class="btn btn-dark btn-block">Generar Contraseña</button>
+                        <button type="button" class="btn btn-dark btn-block">Generar Contraseña</button>
                     </div>
                     <div class="col-md-6">
 
                         <button type="submit" class="btn btn-dark btn-block">Guardar Nuevo</button>
+                        &nbsp;
+                        &nbsp;
                         <button type="button" class="btn btn-dark btn-block">Eliminar</button>
                     </div>
     
@@ -131,8 +133,8 @@
                                     <td>Pérez</td>
                                     <td>juan.perez@example.com</td>
                                     <td>Calle 123, Santiago</td>
-                                    <td>Si</td>
-                                    <td><img src="img/admin.jpg" alt="*" width="50"></td>
+                                    <td>N/A</td>
+                                    <td><img src="img/trunks.jpg" alt="*" width="100"></td>
                                 </tr>
                                 <tr>
                                     <td>002</td>
@@ -143,7 +145,7 @@
                                     <td>maria.lopez@example.com</td>
                                     <td>Avenida 456, Valparaíso</td>
                                     <td>No</td>
-                                    <td><img src="img/cliente.jpg" alt="*" width="50"></td>
+                                    <td><img src="img/itachi.jpg" alt="*" width="100"></td>
                                 </tr>
                                 <tr>
                                     <td>003</td>
@@ -153,8 +155,8 @@
                                     <td>González</td>
                                     <td>carlos.gonzalez@example.com</td>
                                     <td>Plaza 789, Concepción</td>
-                                    <td>Si</td>
-                                    <td><img src="img/cliente.jpg" alt="*" width="50"></td>
+                                    <td>Sí</td>
+                                    <td><img src="img/goku.jpg" alt="*" width="100"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -205,7 +207,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                 </svg>
-                  Direccion: Calle Falsa 123
+                  Dirección: Calle Falsa 123
               </span>
           </p>
       </div>

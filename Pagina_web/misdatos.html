@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="menu_usuario"></div>
-
-    <h1 class="text-center">Actualizar datos</h1>
+<br>
+    <h1 class="text-center">Actualizar Datos</h1>
     <br>
     
     <!-- Formulario de registro de cliente -->
@@ -22,7 +22,7 @@
 
                     <!-- Campo RUT -->
                     <div class="mb-3">
-                        <label for="rut" class="form-label">RUT</label>
+                        <label for="rut" class="form-label textonegro">RUT</label>
                         <input required placeholder="Ej: 123456789-K" 
                             type="text" class="form-control" 
                             id="rut" name="rut" aria-describedby="rutHelp">
@@ -36,7 +36,7 @@
 
                     <!-- Campo Nombre -->
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
+                        <label for="nombre" class="form-label textonegro">Nombre</label>
                         <input required placeholder="Ej: Jose" 
                             type="text" class="form-control" 
                             id="nombre" name="nombre" aria-describedby="nombreHelp">
@@ -50,7 +50,7 @@
 
                     <!-- Campo Apellido -->
                     <div class="mb-3">
-                        <label for="apellido" class="form-label">Apellido</label>
+                        <label for="apellido" class="form-label textonegro">Apellido</label>
                         <input required placeholder="Ej: González" 
                             type="text" class="form-control" 
                             id="apellido" name="apellido" aria-describedby="apellidoHelp">
@@ -64,21 +64,21 @@
 
                     <!-- Campo Correo -->
                     <div class="mb-3">
-                        <label for="correo" class="form-label">Correo</label>
+                        <label for="correo" class="form-label textonegro">Email</label>
                         <input required placeholder="Ej: jesus@gmail.com" 
                             type="email" class="form-control" 
                             id="correo" name="correo" aria-describedby="correoHelp">
                         <div id="correoHelp" class="form-text">
-                            Escribe tu correo.
+                            Escribe su Email.
                         </div>
                         <div class="invalid-feedback">
-                            El campo Correo es obligatorio
+                            El campo Email es obligatorio
                         </div>
                     </div>
 
                     <!-- Campo direccion -->
                     <div class="mb-3">
-                        <label for="direccion" class="form-label">Dirección</label>
+                        <label for="direccion" class="form-label textonegro">Dirección</label>
                         <textarea required placeholder="Ej: Calle Falsa 123. Springfield " 
                             class="form-control" rows="3"
                             id="direccion" name="direccion" aria-describedby="direccionHelp"></textarea>
@@ -92,17 +92,17 @@
 
                     <!-- Campo Subscrito -->
                     <div class="mb-3">
-                        <label for="subscrito" class="form-label">Con subscripción</label>
+                        <label for="subscrito" class="form-label textonegro">Con Suscripción</label>
                         <input type="checkbox" id="subscrito" name="subscrito">
                         <div id="subscritoHelp" class="form-text">
-                            Deseo subscribirme con un aporte de $5.000 mensuales
+                            Deseo suscribirme con un aporte de $5.000 mensuales
                             y obtener un 5% de descuento en mis compras.
                         </div>
                     </div>
 
                     <!-- Campo Contraseña -->
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
+                        <label for="password" class="form-label textonegro">Contraseña</label>
                         <input type="password" required placeholder="Escribe aquí tu contraseña" 
                             class="form-control"
                             id="password" name="password" aria-describedby="passwordHelp">
@@ -118,7 +118,7 @@
 
                     <!-- Campo Repetir Contraseña -->
                     <div class="mb-3">
-                        <label for="password2" class="form-label">Repetir contraseña</label>
+                        <label for="password2" class="form-label textonegro">Repetir Contraseña</label>
                         <input type="password" required placeholder="Repite aquí tu contraseña" 
                             class="form-control"
                             id="password2" name="password2" aria-describedby="password2Help">
@@ -133,7 +133,7 @@
                 </div>
                 <!-- Foto de perfil -->
                 <div class="col-sm-12 col-md-4">
-                    <img class="registro_foto " src="img/blank-profile-picture-973460_1280-768x768.jpg" alt="">
+                    <img class="registro_foto" src="img/goku.jpg"  alt="">
                     <br><br>
                     <input type="file" class="btn btn-dark btn-block">
                 </div>
@@ -141,7 +141,7 @@
             <!-- Botonera -->
             <div class="row">
                 <div class="col text-center">
-                    <button type="submit" class="btn btn-dark btn-block">Guardar</button>
+                    <button type="submit" class="btn btn-dark btn-block">Guardar</button>&nbsp;&nbsp;
                     <button type="reset" class="btn btn-dark btn-block">Limpiar</button>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                 </svg>
-                  Direccion: Calle Falsa 123
+                Dirección: Calle Falsa 123
               </span>
           </p>
       </div>

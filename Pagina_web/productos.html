@@ -17,18 +17,24 @@
     
         <div id="alertContainer"></div>
     
-        <div class="colordefondo card border-0">
-            <div class="border-0" style="color: black; font-size: large;">
+        <div class="card border-0" style="background-color: inherit;">
+            <div class="border-0 textonegro" style="color: black; font-size: large;">
                 Crear/Actualizar Producto
             </div>
             <div class="card-body">
                 <form id="productForm" class="row">
     
-                    <div class="col-md-6 border-0">
+                    <div class="col-md-6 border-0 textonegro">
                         <div class="form-group">
                             <label for="categoria">Categoría:</label>
-                            <input type="text" class="form-control" id="categoria" name="categoria"  >
-                        </div>
+                            <select class="form-control" id="categoria" name="categoria">
+                              <option value="rpg">RPG</option>
+                              <option value="aventura">Aventura</option>
+                              <option value="acción">Acción</option>
+                              <option value="estrategia">Estrategia</option>
+                              <option value="deportes">Deportes</option>
+                            </select>
+                          </div>
                         <div class="form-group">
                             <label for="nombre">Nombre:</label>
                             <input type="text" class="form-control" id="nombre" name="nombre"  >
@@ -39,19 +45,21 @@
                         </div>
                         <div class="form-group">
                             <label for="precio">Precio:</label>
-                            <input type="number" class="form-control" id="precio" name="precio" step="0.01" >
+                            <input type="number" class="form-control" id="precio" name="precio">
                         </div>
                         <div class="form-group">
-                            <label for="descuentoSub">Descuento para Subscriptores (%):</label>
+                            <label for="descuentoSub">Descuento para Suscriptores (%):</label>
                             <input type="number" class="form-control" id="descuentoSub" name="descuentoSub">
                         </div>
                         <div class="form-group">
                             <label for="descuentoOferta">Descuento para Oferta (%):</label>
                             <input type="number" class="form-control" id="descuentoOferta" name="descuentoOferta" >
                         </div>
+                        <br>
+                        
                     </div>
                     <div class=" col form-group">
-                        <img  class="registro_foto" src="img/blank-profile-picture-973460_1280-768x768.jpg" alt="">
+                        <img  class="registro_foto" src="img/descargar (10).jpg" alt="">
                         <br>
                         <br>
                         <div> <input type="file" class="btn btn-dark btn-block">
@@ -60,14 +68,18 @@
                     <div class="col-md-6">
 
                         <button type="submit" class="btn btn-dark btn-block">Guardar Nuevo</button>
+                        &nbsp; &nbsp; &nbsp;
                         <button type="button" class="btn btn-dark btn-block">Eliminar</button>
                     </div>
     
                 </form>
 <br>
-                    <div style="color: black; font-size: large;">
+<br>
+<br>
+                    <div style="color: black; font-size: 25px;" class="textonegro">
                         Lista de Videojuegos
                     </div>
+                    <br>
                     <div >
                         <table class=" fondo_negro borde table table-bordered table-hover">
                             <thead class="table-dark">
@@ -76,9 +88,9 @@
                                     <th>Género</th>
                                     <th>Nombre</th>
                                     <th>Descripción</th>
-                                    <th>Precio</th>
-                                    <th>% Descuento Suscriptor</th>
-                                    <th>% Descuento Oferta</th>
+                                    <th>Precio ($)</th>
+                                    <th>Dcto. Suscriptor (%)</th>
+                                    <th>Dcto. Oferta (%)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -87,7 +99,7 @@
                                     <td>Aventura</td>
                                     <td>The Legend of Zelda: Breath of the Wild</td>
                                     <td>Explora el vasto mundo abierto de Hyrule.</td>
-                                    <td>59.99</td>
+                                    <td>59.990</td>
                                     <td>10</td>
                                     <td>5</td>
                                 </tr>
@@ -96,7 +108,7 @@
                                     <td>Acción</td>
                                     <td>Red Dead Redemption 2</td>
                                     <td>Un épico viaje por el viejo oeste.</td>
-                                    <td>49.99</td>
+                                    <td>49.990</td>
                                     <td>8</td>
                                     <td>3</td>
                                 </tr>
@@ -105,7 +117,7 @@
                                     <td>RPG</td>
                                     <td>The Witcher 3: Wild Hunt</td>
                                     <td>Embárcate en la cacería de monstruos.</td>
-                                    <td>39.99</td>
+                                    <td>39.990</td>
                                     <td>5</td>
                                     <td>2</td>
                                 </tr>
@@ -114,7 +126,7 @@
                                     <td>Deportes</td>
                                     <td>FIFA 22</td>
                                     <td>El simulador de fútbol más realista hasta la fecha.</td>
-                                    <td>59.99</td>
+                                    <td>59.990</td>
                                     <td>7</td>
                                     <td>4</td>
                                 </tr>
@@ -166,7 +178,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                 </svg>
-                  Direccion: Calle Falsa 123
+                Dirección: Calle Falsa 123
               </span>
           </p>
       </div>

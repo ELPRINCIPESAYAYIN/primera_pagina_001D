@@ -91,3 +91,18 @@ background: linear-gradient(87deg, rgba(222,218,208,1) 21%, rgba(198,182,158,1) 
     color: rgb(189, 70, 70);
     font-weight: bolder;
 }
+.generate-password-container {
+    display: flex;
+    align-items: center;
+  }
+  .generate-password-label {
+    flex: 3; /* El label ocupa más espacio */
+    margin-right: 10px; /* Agrega un margen a la derecha del label */
+  }
+  .generate-password-input {
+    flex: 4; /* El input ocupa una cantidad razonable de espacio */
+  }
+  .generate-password-btn {
+    flex: 1; /* El botón ocupa menos espacio */
+    white-space: nowrap;
+  }

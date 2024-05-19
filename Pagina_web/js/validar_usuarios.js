@@ -46,13 +46,21 @@ $(document).ready(function() {
       return regex.test(value);
   
     }, 'Ingrese un correo válido');
+
+    $.validator.addMethod("requireGroup", function(value, element, options) {
+      var groupName = options.groupName;
+      return $("input[name='" + groupName + "']:checked").length > 0;
+    }, "Por favor seleccione una opción.");
   
 
-  $("#registro").validate({
+  $("#formulario_producto").validate({
     rules: {
       id:{
         required: true,
         minlength: 3
+      },
+      tipoUsuario:{
+        requireGroup: { groupName: "tipoUsuario" }
       },
       apellido:{
         required: true,
@@ -61,7 +69,7 @@ $(document).ready(function() {
         required: true,
         rutChileno: true,
       },
-      nombre:{
+      nombres:{
         required: true,
       },
       apellidos: {
@@ -83,7 +91,10 @@ $(document).ready(function() {
     messages: {
       id: {
         required: "El ID es un campo obligatorio",
-        minlength: "Mínimo 5 caracteres",
+        minlength: "Mínimo 3 caracteres",        
+      },
+      tipoUsuario: {
+        requireGroup: "Por favor seleccione una opción."
       },
       rut:{
         required: "El RUT es un campo obligatorio",
@@ -103,9 +114,24 @@ $(document).ready(function() {
         required: "La Direccion es una campo obligatorio",
 
       },
-      password: {
+      contraseña: {
         required: "La Contraseña es un campo obligatorio",
       },
+      
     },
+    errorPlacement: function(error, element) {
+      if (element.attr("name") == "tipoUsuario") {
+          error.insertAfter("#tipoUsuarioError");
+      }
+      else if (element.attr("name") == "contraseña") {
+          error.insertAfter("#contraseña_error");
+        }  
+      else {
+          error.insertAfter(element);
+      }
+  },
+
+  
   });
 });
+

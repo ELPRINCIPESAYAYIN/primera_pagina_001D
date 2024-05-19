@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="menu_usuario"></div>
+    <div id="menu"></div>
 <br>
     <h1 class="text-center">Actualizar Datos</h1>
     <br>
     
     <!-- Formulario de registro de cliente -->
-    <form class="row g-3 needs-validation" novalidate>
+    <form id="registro" class="row g-3 needs-validation" novalidate>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <!-- Campos del formulario -->
@@ -66,7 +66,7 @@
                     <div class="mb-3">
                         <label for="correo" class="form-label textonegro">Email</label>
                         <input required placeholder="Ej: jesus@gmail.com" 
-                            type="email" class="form-control" 
+                            type="text" class="form-control" 
                             id="correo" name="correo" aria-describedby="correoHelp">
                         <div id="correoHelp" class="form-text">
                             Escribe su Email.
@@ -192,9 +192,17 @@
       </div>
       
       </footer>
-    <script src="js/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+            integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/validar_resgistro.js"></script>
 </body>
 </html>

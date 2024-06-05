@@ -19,35 +19,33 @@ $(document).ready(function() {
   
     $.validator.addMethod("soloLetras", function(value, element) {
       return this.optional(element) || /^[a-zA-Z\s]+$/.test(value);
-    }, "Por favor ingrese solo letras");
+    }, "Por favor ingrese sólo letras");
 
 //falta  id solo numero, la k en mayusculas y ortografia.
 
-  $("#formulario_ingresar").validate({
-  rules: {
-    inputEmail: {
-          required: true,
-          emailCompleto: true,
-      },
-      inputPassword: {
-          required: true,
-      },
-  },
-  //mensajes de validadores
-  messages: {
+$("#formulario_ingresar").validate({
+    rules: {
+        inputEmail: {
+            required: true,
+            emailCompleto: true,
+        },
+        inputPassword: {
+            required: true,
+        },
+    },
+    // Mensajes de validadores
+    messages: {
+        inputEmail: {
+            required: "El correo electrónico es un campo obligatorio",
+            emailCompleto: "El correo electrónico no es válido"
+        },
+        inputPassword: {
+            required: "La contraseña es un campo obligatorio."
+        },
+    }
+});
 
-    inputEmail: {
-        required: "El Correo Electronico es un campo obligatorio",
-        emailCompleto: "El Correo Electronico no es valido"
-      },
-      inputPassword: {
-        required: "La Contraseña  es un campo obligatorio."
-      },
-
-  }
-  });
-
-  $("#bodega_formulario").validate({
+$("#bodega_formulario").validate({
     rules: {
         select_nombre: {
             required: true,
@@ -61,74 +59,80 @@ $(document).ready(function() {
             min: 1,
         }
     },
-    //mensajes de validadores
+    // Mensajes de validadores
     messages: {
         select_nombre: {
-            required: "El Nombre es un campo obligatorio",
+            required: "El nombre es un campo obligatorio",
         },
         select_categoria: {
-            required: "La Categoria es un campo obligatorio."
+            required: "La categoría es un campo obligatorio."
         },
         cantidad: {
-            required: "La Cantidad es un campo obligatorio",
+            required: "La cantidad es un campo obligatorio",
+            number: "La cantidad debe ser un número",
+            min: "La cantidad debe ser al menos 1"
         },
-
-
-
     }
 });
 
 $("#formulario_producto").validate({
-  rules: {
-      floatingSelect: {
-          required: true,
-      },
-      nombre: {
-          required: true,
-      },
-      descripcion: {
-          required: true,
-      },
-      precio: {
-          required: true,
-          number: true,
-          min: 0,
-      },
-      descuentoSub: {
-          required: true,
-          number: true,
-          min: 0,
-          max:100,
-      },
-      descuentoOferta: {
-          required: true,
-          number: true,
-          min: 0,
-          max:100,
-      }
-  },
-  //cambiar los mensajes de error
-  messages: {
-      nombre: {
-          required: "El Nombre es un campo obligatorio",
-      },
-      descripcion: {
-          required: "La Descripcion es un campo obligatorio."
-      },
-      precio: {
-          required: "El Precio es un campo obligatorio",
-      },
-      descuentoSub: {
-          required: "El Descuento Subcriptor es un campo requerido",
-          number: "El cambo debe ser un numero"
-      },
-      descuentoOferta: {
-          required: "El Descuento Oferta es un campo obligatorio",
-      },
-      floatingSelect: {
-          required:"La Categoria es un campo obligatorio."
-      }
-  }
+    rules: {
+        floatingSelect: {
+            required: true,
+        },
+        nombre: {
+            required: true,
+        },
+        descripcion: {
+            required: true,
+        },
+        precio: {
+            required: true,
+            number: true,
+            min: 0,
+        },
+        descuentoSub: {
+            required: true,
+            number: true,
+            min: 0,
+            max: 100,
+        },
+        descuentoOferta: {
+            required: true,
+            number: true,
+            min: 0,
+            max: 100,
+        }
+    },
+    // Cambiar los mensajes de error
+    messages: {
+        nombre: {
+            required: "El nombre es un campo obligatorio",
+        },
+        descripcion: {
+            required: "La descripción es un campo obligatorio."
+        },
+        precio: {
+            required: "El precio es un campo obligatorio",
+            number: "El precio debe ser un número",
+            min: "El precio no puede ser negativo"
+        },
+        descuentoSub: {
+            required: "El descuento suscriptor es un campo obligatorio",
+            number: "El campo debe ser un número",
+            min: "El descuento no puede ser negativo",
+            max: "El descuento no puede ser mayor a 100"
+        },
+        descuentoOferta: {
+            required: "El descuento oferta es un campo obligatorio",
+            number: "El campo debe ser un número",
+            min: "El descuento no puede ser negativo",
+            max: "El descuento no puede ser mayor a 100"
+        },
+        floatingSelect: {
+            required: "La categoría es un campo obligatorio."
+        }
+    }
 });
 
 });
